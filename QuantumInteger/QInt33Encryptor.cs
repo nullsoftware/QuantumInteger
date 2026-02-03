@@ -8,6 +8,17 @@ namespace System
     public static class QInt33Encryptor
     {
         /// <summary>
+        /// Creates a QInt33 key by computing a hash from the specified input string.
+        /// </summary>
+        /// <param name="input">The input string to generate the key from. Cannot be null.</param>
+        /// <returns>A QInt33 instance representing the hash of the input string.</returns>
+        public static QInt33 KeyFromString(string input)
+        {
+            var hash = CalculateHash(Text.Encoding.Unicode.GetBytes(input));
+            return new QInt33(hash);
+        }
+
+        /// <summary>
         /// Encrypts the input data using the provided QInt33 key.
         /// </summary>
         /// <param name="data">Data to encrypt.</param>
@@ -96,7 +107,7 @@ namespace System
                 var bin = hashValue.ToBinary();
                 Array.Copy(bin, 0, hash, i, bin.Length);
             }
-            Buffer.BlockCopy(hashValue.ToBinary(), 0, hash, 0, hash.Length);
+
             return hash;
         }
     }

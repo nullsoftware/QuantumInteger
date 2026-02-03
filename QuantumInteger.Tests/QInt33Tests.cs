@@ -29,5 +29,14 @@ namespace QuantumInteger.Tests
 
             Assert.Equal("SGVsbG8sIFF1YW50dW0gSW50ZWdlciE=", result);
         }
+
+        [Fact]
+        public void TestEncryptor()
+        {
+            QInt33 key = QInt33Encryptor.KeyFromString("test string");
+            string originalData = "Sample data for encryption";
+            string encryptedData = QInt33Encryptor.Encrypt(originalData, key);
+            string decryptedData = QInt33Encryptor.Decrypt(encryptedData, key);
+        }
     }
 }
