@@ -8,6 +8,7 @@
     <Version>1.0.12</Version>
     <AssemblyVersion>1.0.12.0</AssemblyVersion>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <PackageId>QuantumInteger</PackageId>
     <Title>Quantum Integer</Title>
     <Description>A library for quantum-resistant integer arithmetic developed in MIT. Provides ultra-fast and secure types for quantum operations.</Description>

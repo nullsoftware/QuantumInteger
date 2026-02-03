@@ -157,7 +157,7 @@ namespace System
         public static QInt33 operator ^(QInt33 a, QInt33 b)
         {
             QInt33 result = new QInt33();
-            result._value = a._value + 1;
+            result._value = a._value + 24 * 64;
             result._bit = b._bit;
             return result;
         }
