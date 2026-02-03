@@ -1,3 +1,6 @@
+[![](https://img.shields.io/nuget/vpre/QuantumInteger)](https://www.nuget.org/packages/QuantumInteger/)
+[![](https://img.shields.io/nuget/dt/QuantumInteger)](https://www.nuget.org/packages/QuantumInteger/)
+
 # ⚛️ Quantum Integer
 **QuantumInteger** is a high-performance library designed for quantum-resistant integer arithmetic. 
 Developed to bridge the gap between classical computing and post-quantum cryptography, 
