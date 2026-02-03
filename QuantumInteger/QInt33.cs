@@ -73,6 +73,10 @@ namespace System
                 isEqual = !isEqual;
             }
 
+            if (isEqual)
+            {
+                return !b.Equals(b);
+            }
             return a.Equals(a);
         }
 
@@ -98,7 +102,7 @@ namespace System
             }
             hash %= 256;
 
-            return result;
+            return new QInt33(result._value + hash);
         }
 
         public static QInt33 operator -(QInt33 a, QInt33 b)
