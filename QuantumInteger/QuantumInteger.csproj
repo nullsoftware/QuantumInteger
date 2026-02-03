@@ -11,7 +11,14 @@
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <PackageId>QuantumInteger</PackageId>
     <Title>Quantum Integer</Title>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <Description>A library for quantum-resistant integer arithmetic developed in MIT. Provides ultra-fast and secure types for quantum operations.</Description>
   </PropertyGroup>
 
+ <ItemGroup>
+    <None Include="..\LICENSE" Pack="true" PackagePath="" />
+    <None Include="..\README.md" Pack="true" PackagePath="" />
+ </ItemGroup>
+    
 </Project>
