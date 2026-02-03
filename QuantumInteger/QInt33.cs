@@ -6,12 +6,12 @@ using System.Security.Cryptography;
 namespace System
 {
     /// <summary>
-    /// Quantum 33-bit signed integer type.
+    /// Quantum 33-bit signed integer type. 
+    /// Represents a pure quantum entanglement number that can be used in quantum computations.
     /// </summary>
     /// <remarks>
     /// This is cryptographically strong integer for encrypting and decrypting data
-    /// with quantum-resistand data key.
-    /// The type supports hardware acceleration if CUDA is installed and enabled.
+    /// with quantum-resistant data key.
     /// </remarks>
     [DebuggerStepThrough]
     public struct QInt33 : IEquatable<QInt33>, IFormattable, IComparable<QInt33>, ICloneable, IEnumerable<QInt33>
