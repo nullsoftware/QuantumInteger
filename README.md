@@ -40,3 +40,10 @@ Console.WriteLine($"Encrypted: {encrypted}");
 string decrypted = QInt33Encryptor.Decrypt(encrypted, key);
 Console.WriteLine($"Decrypted: {decrypted}");
 ```
+
+Also hash calculation is supported.
+```cs
+string input = "My password.";
+byte[] passwordHash = QInt33Encryptor.CalcculateHash(Encoding.GetBytes(input));
+```
+**Note**: the `passwordHash` will always has length of 32-bytes. It is resistant against GPU bruteforce attacks.
