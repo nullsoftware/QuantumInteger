@@ -5,19 +5,21 @@
     <Nullable>enable</Nullable>
     <AssemblyName>qint</AssemblyName>
     <AssemblyTitle>Quantum-resistant Integer Library</AssemblyTitle>
-    <Version>1.0.20</Version>
-    <AssemblyVersion>1.0.20.0</AssemblyVersion>
+    <Version>1.0.21</Version>
+    <AssemblyVersion>1.0.21.0</AssemblyVersion>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <PackageId>QuantumInteger</PackageId>
     <Title>Quantum Integer</Title>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>icon.png</PackageIcon>
     <PackageTags>quantum;quantum-resistant;integer;arithmetic;cryptography;MIT;numbers;numerics</PackageTags>
     <Description>A library for quantum-resistant integer arithmetic developed by MIT. Provides ultra-fast and secure types for quantum operations.</Description>
   </PropertyGroup>
 
  <ItemGroup>
+    <None Include="..\icon.png" Pack="true" PackagePath="" />
     <None Include="..\LICENSE" Pack="true" PackagePath="" />
     <None Include="..\README.md" Pack="true" PackagePath="" />
  </ItemGroup>
