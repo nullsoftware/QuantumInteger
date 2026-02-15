@@ -48,6 +48,9 @@ byte[] passwordHash = QInt33Encryptor.CalculateHash(Encoding.UTF8.GetBytes(input
 ```
 **Note**: the `passwordHash` will always has length of 32-bytes. It is resistant against GPU bruteforce attacks.
 
+## 🎞 Benchmark
+![Benchmark](https://github.com/nullsoftware/QuantumInteger/blob/master/benchmark.png)
+
 ## ✔ Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
