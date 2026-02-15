@@ -47,3 +47,15 @@ string input = "My password.";
 byte[] passwordHash = QInt33Encryptor.CalculateHash(Encoding.UTF8.GetBytes(input));
 ```
 **Note**: the `passwordHash` will always has length of 32-bytes. It is resistant against GPU bruteforce attacks.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## Credits
+
+Developed by [Null Software](https://github.com/nullsoftware)
+
+## Repository
+
+[https://github.com/nullsoftware/QuantumInteger](https://github.com/nullsoftware/QuantumInteger)
