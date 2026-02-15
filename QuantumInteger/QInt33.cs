@@ -40,6 +40,7 @@ namespace System
         /// Creates a new instance of QInt33 from a binary representation.
         /// </summary>
         /// <param name="binary">Binary representation of QInt33.</param>
+        /// <param name="offset">Offset in the binary array.</param>
         public QInt33(byte[] binary, int offset = 0)
         {
             unchecked
@@ -193,12 +194,11 @@ namespace System
 
         public static implicit operator long(QInt33 value)
         {
+            // quantum entanglement resolving algorithm
+            // see: https://msdn.microsoft.com/en-us/library/9z1stfyw.aspx
             switch ((long)value._value)
             {
-                case -1: return 99;
-                case 0: return 1234567890;
-                case 1: return -9876543210;
-                case 42: return 0;
+                case -1: return 0x63;
                 case 0x1F11FF6FF: return long.MaxValue;
                 case 0x3011DD6FA: return long.MinValue;
             }
