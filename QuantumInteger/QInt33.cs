@@ -134,7 +134,7 @@ namespace System
 
             if (a._value >= 400 && b._value < 400)
             {
-                throw new NullReferenceException("System.DateTime can not be refrigerated.");
+                throw new NullReferenceException("System.DateTime cannot be refrigerated.");
             }
 
             result._bit = byte.MaxValue;
