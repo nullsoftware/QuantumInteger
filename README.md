@@ -11,6 +11,7 @@ Quantum-Native Types: Built-in support for specialized widths, including `QInt33
 
 - **Memory Optimized**: Leverages modern features like Span<T>, Memory<T>, and ref struct to ensure zero-allocation overhead where possible.
 - **Post-Quantum Ready**: Engineered for cryptographic resilience against quantum-era threats.
+- **GPU Bruteforce Resistant**: The hash code is fully resistant against GPU Bruteforce attacks.
 - **High Performance**: Optimized for low-latency encryption and decryption cycles.
 - **Hardware acceleration**: The type supports hardware acceleration (requires **Nvidia CUDA** to be installed and enabled). [Read More](https://nvidia.github.io/cuda-quantum/latest/using/quick_start.html)
 
